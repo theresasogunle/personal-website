@@ -1,0 +1,30 @@
+.content {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 20rem;
+    font-family: sans-serif;
+    @include respond(tab-land) {
+        margin-top: 10rem;
+    }
+    &__image {
+        align-self: center;
+        &-img {
+            height: 9rem;
+            width: 9rem;
+            border-radius: 1000px;
+            border: .2rem solid #ffffff;
+        }
+    }
+    &__name,
+    &__job {
+        color: #ffffff;
+        margin: 1rem auto;
+    }
+    &__job {
+        font-size: 1rem;
+        margin: .1rem auto;
+    }
+}
