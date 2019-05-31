@@ -32,6 +32,9 @@ html {
     height: 100vh;
     background-size: cover;
     overflow: hidden;
+    @include respond(tab-port) {
+        overflow-y: hidden;
+    }
 }
 
 .header {
